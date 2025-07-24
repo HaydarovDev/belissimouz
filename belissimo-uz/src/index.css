@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@font-face {
+    src: url(./assets/font/Gilroy-Regular.ttf);
+    font-family: "Gilroy";
+}
+
+@font-face {
+    src: url(./assets/font/Gilroy-SemiBold.ttf);
+    font-family: "regular";
+}
+
+.regular {
+    font-family: "regular";
+}
+
+.gilroy {
+    font-family: "Gilroy";
+}
+
+.center-mode-slider .slick-slide {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.9);
+}
+
+.center-mode-slider .slick-center {
+    opacity: 1 !important;
+    transform: scale(1.1);
+    z-index: 10;
+}
