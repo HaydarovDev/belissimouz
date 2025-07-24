@@ -32,13 +32,13 @@ const ButtonSwitch = () => {
             Olib ketish
           </button>
         </div>
-        <div className="bg-[#FFFBEE] border-[#FFC600] text-[#FFC600] border-1 w-180 rounded-[10px] flex justify-between px-2 items-center">
+        <div className="bg-[#FFFBEE] border-[#FFC600] text-[#FFC600] border-1 w-170 rounded-[10px] flex justify-between px-2 items-center">
           <p>
             {active === "b"
               ? "Filialni tanlang"
               : "Yetkazib berish manzilini tanlang"}
           </p>
-          <FiEdit2 />
+          <FiEdit2 className="cursor-pointer" />
         </div>
       </div>
     </article>

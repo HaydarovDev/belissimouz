@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Swiper from "./components/Swiper";
 import ButtonSwitch from "./components/ButtonSwitch";
 import Products from "./pages/Products";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Swiper />
       <ButtonSwitch />
       <Products />
+      <Footer />
     </>
   );
 };
