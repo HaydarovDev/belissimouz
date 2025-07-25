@@ -16,8 +16,8 @@ const Nav = () => {
   const { region } = useRegion();
 
   return (
-    <nav className="w-full flex py-3 justify-center items-center">
-      <div className="w-[75%] px-3 flex justify-between">
+    <nav className="w-full py-3 justify-center items-center hidden lg:flex">
+      <div className="w-[75%] sm:w-full md:w-full lg:w-[75%] px-3 flex justify-between">
         <ul className="flex items-center gap-4">
           <li>
             <a href="" className="flex items-center gap-4">

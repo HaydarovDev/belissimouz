@@ -13,8 +13,10 @@ const App = () => {
     <>
       <Header />
       <Nav />
-      <Swiper />
-      <ButtonSwitch />
+      <div className="flex flex-col-reverse sm:flex-col-reverse md:flex-col-reverse lg:flex-col">
+        <Swiper />
+        <ButtonSwitch />
+      </div>
       <Products />
       <Footer />
     </>

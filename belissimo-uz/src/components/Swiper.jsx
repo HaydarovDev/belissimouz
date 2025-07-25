@@ -20,11 +20,12 @@ const Swiper = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: false,
   };
 
   return (
-    <div className="w-full flex justify-center items-center">
-      <div className="w-[75%] px-1">
+    <div className="w-full flex justify-center mt-3 items-center">
+      <div className="w-full sm:full lg:w-[75%] px-1">
         <Slider {...settings}>
           {images.map((src, index) => (
             <div key={index} className="px-2">

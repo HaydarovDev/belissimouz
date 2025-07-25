@@ -1,16 +1,29 @@
 import React, { memo, useState } from "react";
 import { IoCall } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
+import { LuUserRound } from "react-icons/lu";
 import uz from "../assets/images/uzFlag.svg";
 import rus from "../assets/images/rusFlag.svg";
 import { Link } from "react-router-dom";
+import coin from "../assets/images/coin.svg";
 
 const Header = () => {
   const [show, setShow] = useState(false);
+  const counter = 0;
 
   return (
-    <header className="flex w-full justify-center items-center">
-      <div className="flex justify-between w-[75%] items-center py-3 px-3 border-b-2 border-[#f4f4f4]">
+    <header className="flex w-full justify-center items-center ">
+      <div className="bg-[#006f4c] w-full justify-between items-center p-2 flex sm:hidden">
+        <div className="flex gap-2 items-center text-white regular">
+          <img width={30} src={coin} alt="" />
+          {counter}
+        </div>
+        <button className="flex items-center gap-2 bg-white p-1 px-2 cursor-pointer rounded-[50px]">
+          <LuUserRound />
+          Kirish
+        </button>
+      </div>
+      <div className="hidden justify-between w-[75%] sm:w-full sm:hidden md:flex lg:w-[75%] items-center py-3 px-3 border-b-2 border-[#f4f4f4]">
         <ul className="flex gap-5">
           <li className="text-[#006f4c] regular">
             <Link
